@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>¡Felices 10 Meses!</title>
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PANTALLA 1: EL SOBRE -->
+    <div id="intro-screen">
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+            <div class="envelope-letter" id="letter">Para ti</div>
+            <div class="flap-left"></div>
+            <div class="flap-right"></div>
+            <div class="flap-bottom"></div>
+            <div class="flap-top" id="flap"></div>
+        </div>
+        <div class="instruction-text" id="instruction">Toca el sobre para abrirlo</div>
+    </div>
+
+    <!-- PANTALLA 2: LA CARTA -->
+    <div id="main-content">
+
+        <audio id="bg-music" loop>
+            <source src="musica.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="card-container">
+            
+            <!-- Sello limpio apuntando a tu archivo de imagen -->
+            <img class="custom-seal" src="sello.png" alt="Sello de cera">
+
+            <h1>10 Meses Juntos</h1>
+
+            <div class="message">
+                <p>Hola mi chula jsjsjsj,</p>
+                <p>Ya 10 mesesitos juntos jsjsjs, se que el dia de hoy no podremos vernos, pero a pesar de eso, no me entristece, quería darte una sorpresa antes de que nos veamos este fin de semana, ya que generalmente los jueves no nos da mucho tiempo. y es esta cartita, esta vez digital jsjs, aunque se me hace chistoso que yo como programador, no te había mandado una así antes pero llego el dia muejejeje.</p>
+                <p>Esta es una carta un poco mas tranquila, por que la buena te la dare el dia sabado junto a tu regalito jejeje, solo quería recordarte lo mucho que te amo, y lo mucho que me hace feliz e inspiras a ser mejor dia con dia. Últimamente he cumplido muchos objetivos y tenido problemas que de no ser por ti, quizás no habría sobrellevado de buena forma. Eres lo mas importante para mi y te extraño todos los días.</p>
+            </div>
+
+            <div class="polaroid-gallery">
+                <div class="polaroid">
+                    <img src="1.jpeg" alt="Bonita">
+                    <div class="caption">No se como le haces para ser tan bonita ;3;</div>
+                </div>
+                <div class="polaroid">
+                    <img src="2.jpeg" alt="lokura">
+                    <div class="caption">Jajajaj ame esta foto, modo lokura</div>
+                </div>
+                <div class="polaroid">
+                    <img src="3.jpeg" alt="juticos">
+                    <div class="caption">Me gustan mucho los detallitos que me das</div>
+                </div>
+                <div class="polaroid">
+                    <img src="4.jpeg" alt="ice">
+                    <div class="caption">Tambien me gusta que no solo convivimos nosotros, si no que tambien con mi hermanita</div>
+                </div>
+            </div>
+
+            <div class="message">
+                <p>Valoro mucho el tiempo que pasamos juntos, y lo mucho o poco que hacemos todo el tiempo, pero estando juntos, eres una chica inteligente, preciosa, precavida y responsable, queria recordarte que estas donde estas, trabajando y con responsabilidades, por que has dado el ancho y haces bien tu trabajo, y aunque te merece mucho mas, no creas que no te mereces ese trabajo, ni mucho menos que no perteneces ahí, si sigues ahi, es porque te lo has ganado con tu esfuerzo y dedicación, nunca dudes de tus capacidades mi vida, por que al final del dia, diosito hace las cosas por algo, y te dio esa oportunidad y tu la aprovechaste completamente, mucho ánimo mi vida, me inspiras todo el tiempo, y te amo muchisimo <3</p>
+            </div>
+
+            <div class="song-dedication">
+                <p>Te dedico esta canción con todo mi corazón:</p>
+                <a href="https://www.youtube.com/watch?v=qOKBwd_SORU" target="_blank" class="youtube-btn">
+                    ▶ "Heaven Can Wait"
+                </a>
+            </div>
+
+            <button class="secret-btn" onclick="revealSecret()">Toca para una sorpresa</button>
+            <div id="secret-message">¡Has ganado un cupon para picarme la cola! ❤️ <img src="cupon.png" alt="Cupón especial" class="secret-img"></div>
+            
+        </div>
+    </div>
+
+    <!-- Archivo de funcionalidad -->
+    <script src="script.js"></script>
+</body>
+</html>
